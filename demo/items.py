@@ -8,7 +8,9 @@
 import scrapy
 
 
-class DemoItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class WeiBoItem(scrapy.Item):
+    page = scrapy.Field()
+    tag = scrapy.Field()
+    title = scrapy.Field()
+    content = scrapy.Field()
+    update_time = scrapy.Field()
